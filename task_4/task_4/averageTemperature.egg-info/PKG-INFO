@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: averageTemperature
+Version: 0.0.1
+Summary: Package with function that computes average temperature in city in particular year from csv data
+Author-email: Timur Akhmatshin <st077029@student.spbu.ru>
+Project-URL: Homepage, https://apmath.spbu.ru
+Project-URL: Bug Tracker, https://github.com/averageTemperature
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.105.0
+Requires-Dist: requests>=2.0.0
+Requires-Dist: pandas>=1.4.2
+Requires-Dist: numpy>=1.21.5
+Provides-Extra: dev
+Requires-Dist: mypy>=1.7.1; extra == "dev"
+Requires-Dist: ruff>=0.1.8; extra == "dev"
+Requires-Dist: black>=23.12.0; extra == "dev"
+Requires-Dist: isort>=5.3.12; extra == "dev"
+Requires-Dist: pytest>=7.4.3; extra == "dev"
+Provides-Extra: inference
+Requires-Dist: tqdm>=4.66.0; extra == "inference"
+
+## Модуль avgtemp содержит единственную функцию avg_year_city, которая вычисляет среднюю температуру за конкретныйгод в конкретном городе, используя данные из csv формата
+
+## Создание виртуального окружения и его активация 
+    
+> python3 -m venv .venv
+
+Linux:
+
+> source .venv/bin/activate
+
+Windows:
+
+> .venv\Scripts\activate.bat
+
+## Установка зависимостей
+
+> pip install --editable ".[dev]"
+
+## Запуск утилит
+
+> isort projectname/ 
+
+> black projectname/
+
+> ruff projectname/
+
+> mypy projectname/
+
+## Запуск тестов 
+
+> pytest tests/
+

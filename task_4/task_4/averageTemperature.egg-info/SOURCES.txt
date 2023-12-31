@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+averageTemperature/__init__.py
+averageTemperature/avgtemp.py
+averageTemperature.egg-info/PKG-INFO
+averageTemperature.egg-info/SOURCES.txt
+averageTemperature.egg-info/dependency_links.txt
+averageTemperature.egg-info/requires.txt
+averageTemperature.egg-info/top_level.txt
+averageTemperature/sb/__init__.py
